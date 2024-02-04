@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html">Web<span>Studio</span></a>
@@ -52,8 +52,79 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg width="16" height="14" class="menu-open-btn-icon">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <div>
+          <button type="button" class="menu-close-btn">
+            <svg width="8" height="8" class="menu-close-btn-icon">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <ul class="mob-address-list">
+            <li class="mob-address-item">
+              <a class="mob-address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-address-item">
+              <a class="mob-address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-media-list">
+            <li class="mob-media-list-item">
+              <a href="" class="mob-media-link">
+                <svg width="24" height="24" class="mob-media-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-list-item">
+              <a href="" class="mob-media-link">
+                <svg width="24" height="24" class="mob-media-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-list-item">
+              <a href="" class="mob-media-link">
+                <svg width="24" height="24" class="mob-media-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-list-item">
+              <a href="" class="mob-media-link">
+                <svg width="24" height="24" class="mob-media-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <main class="main">
       <section class="hero">
@@ -441,7 +512,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-info">
           <a class="footer-logo" href="./index.html"
@@ -506,8 +577,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-open">
+    </footer>
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg width="8" height="8" class="modal-close-btn-icon">
@@ -591,6 +662,6 @@
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
