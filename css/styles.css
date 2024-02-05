@@ -1000,7 +1000,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
   }
 
   .header-logo {
@@ -1065,10 +1065,6 @@ img {
 
   .features-item {
     width: calc((100% - 24px) / 2);
-  }
-
-  .team > .container {
-    max-width: 584px;
   }
 
   .team-list {
@@ -1141,7 +1137,8 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1126px;
+    max-width: 1158px;
+    padding: 0 15px;
   }
 
   .header-logo {
@@ -1160,6 +1157,8 @@ img {
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1233,10 +1232,6 @@ img {
     padding-bottom: 120px;
   }
 
-  .team > .container {
-    max-width: 1126px;
-  }
-
   .team-list {
     gap: 24px;
   }
@@ -1257,17 +1252,12 @@ img {
     width: calc((100% - 72px) / 3);
   }
 
-  .footer-container {
-    max-width: 1126px;
-    padding-left: 16px;
-    gap: 0;
-  }
-
   .footer-info {
     margin-right: 120px;
   }
 
   .footer-media {
+    margin: 0 auto;
   }
 
   .footer-media-list {
