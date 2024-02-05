@@ -192,10 +192,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
-
 
 .menu-close-btn {
   display: block;
@@ -218,9 +215,11 @@ img {
 .mob-menu-list {
   margin-bottom: 32px;
 }
+
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
+
 .mob-menu-link {
   font-weight: 700;
   font-size: 36px;
@@ -231,6 +230,7 @@ img {
 }
 .current {
 }
+
 .mob-address-list {
   margin-bottom: 48px;
 }
@@ -264,11 +264,9 @@ img {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 .mob-media-icon {
 }
-
 
 /************** HERO **************/
 
@@ -289,16 +287,16 @@ img {
   /* max-width: 1440px; */
 }
 
-@media (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office-mob-2x.jpg);
-
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mob-2x.jpg);
+  }
 }
 
 .hero-container {
@@ -353,9 +351,12 @@ img {
 
 /************** FEATURES **************/
 
-.features .container {
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
+/* .features .container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+} */
+
+.features {
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -375,7 +376,7 @@ img {
 } */
 
 .features-icon {
-  display:none;
+  display: none;
 }
 
 .features-title {
@@ -540,7 +541,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   /* gap: 48px 24px; */
-  gap: 24px;
+  gap: 48px;
 }
 
 .portfolio-list-item {
@@ -616,9 +617,10 @@ img {
 
 .footer-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 72px;
-  align-items: baseline;
+  /* ----align-items: baseline; */
 }
 
 .footer-logo {
@@ -630,7 +632,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: block;
-  text-align:center;
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -670,10 +672,9 @@ img {
 .footer-media-list {
   display: flex;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  /*-------- margin-left: 40px;
+  margin-right: 40px; */
   gap: 16px;
-  
 }
 
 .footer-media-list-item {
@@ -700,7 +701,6 @@ img {
 .footer-media-icon {
   fill: #f4f4fd;
 }
-
 
 .footer-form {
   /* margin-left: 80px; */
@@ -820,9 +820,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -994,23 +991,29 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-
 /* !tablet! */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 736px;
   }
 
+  .header-logo {
+    margin-right: 120px;
+  }
+
   .header-menu-list {
     display: flex;
-
   }
 
   .header-address-list {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 12px;
+  }
+
+  .header-address-link {
+    font-size: 12px;
   }
 
   .menu-open-btn,
@@ -1028,17 +1031,17 @@ img {
       url(../images/people-office-tab.jpg);
   }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/people-office-tab-2x.jpg);
-
-}
+    }
+  }
 
   .hero-title {
     font-size: 56px;
@@ -1047,11 +1050,13 @@ img {
     margin-bottom: 39px;
   }
 
+  .features-subtitle {
+    justify-content: flex-start;
+  }
+
   .features-list {
     gap: 64px 24px;
   }
-
-
 
   .features-item {
     width: calc((100% - 24px) / 2);
@@ -1079,7 +1084,10 @@ img {
 
   .footer-container {
     gap: 72px 24px;
-    padding-left: 92px;
+    /* padding-left: 92px; */
+    max-width: 530px;
+    justify-content: flex-start;
+    align-items: baseline;
   }
 
   .footer-info {
@@ -1093,12 +1101,11 @@ img {
   .footer-logo {
     text-align: start;
   }
-  
 
   .footer-text {
     text-align: start;
   }
-    
+
   .footer-subtitle {
     text-align: start;
   }
@@ -1119,7 +1126,7 @@ img {
 
 /* !-----before-desktop-----! */
 
-@media (max-width: 1157px) {
+@media screen and (max-width: 1157px) {
   .features-icon {
     display: none;
   }
@@ -1127,14 +1134,22 @@ img {
 
 /* !-----desktop-----! */
 
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1126px;
+  }
+
+  .header-logo {
+    margin-right: 72px;
   }
 
   .header-address-list {
     flex-direction: row;
     gap: 40px;
+  }
+
+  .header-address-link {
+    font-size: 16px;
   }
 
   .hero {
@@ -1147,17 +1162,17 @@ img {
       url(../images/people-office.jpg);
   }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/people-office-2x.jpg);
-
-}
+    }
+  }
 
   .hero-title {
     font-size: 56px;
@@ -1165,7 +1180,12 @@ img {
     margin-bottom: 48px;
   }
 
-  .features .container {
+  /* .features .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  } */
+
+  .features {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -1234,8 +1254,8 @@ img {
 
   .footer-container {
     max-width: 1126px;
-  padding-left: 16px;
-  gap: 0;
+    padding-left: 16px;
+    gap: 0;
   }
 
   .footer-info {
@@ -1243,7 +1263,6 @@ img {
   }
 
   .footer-media {
-
   }
 
   .footer-media-list {
@@ -1252,6 +1271,6 @@ img {
   }
 
   .footer-form {
-  align-items: flex-end;
+    align-items: flex-end;
   }
 }
